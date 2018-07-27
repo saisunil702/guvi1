@@ -1,0 +1,8 @@
+ch = raw_input()
+if(ch >= 'a' and ch <= 'z') or (ch >= 'A' and ch <= 'Z'):
+	if(ch == ['a','e','i','o','u','A','E','I','O','U']):
+		print('Vowels')
+	else:
+		print('consonant')
+else:
+	print('invalid')
