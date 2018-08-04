@@ -1,8 +1,9 @@
-num=int(input())
-lis=[int(x) for x in input().split()]
-for i in range(0,num):
-a=lis[i]
-while(a==i):
-print(a,end="")
-else:
-print("-1)"
+n=input()
+user=list(map(int,input().split()))
+temp=0
+for num in range(len(user)):
+    if (num==user[num]):
+        print(num,end=" ")
+        temp+=1
+if (temp==0):
+    print('-1')
