@@ -1,3 +1,3 @@
 a=int(input())
-b=[int(x) for x in input().split()]
-print(max(b))
+lis=[int(x) for x in input().split()]
+print(max(lis))
