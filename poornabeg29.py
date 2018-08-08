@@ -1,4 +1,4 @@
-time=int(input())
-hour=time//60
-time%=60
-print(hour,time,sep=" ")
+minutes=int(input())
+hour=minutes//60
+minutes%=60
+print(hour,minutes,sep=" ")
