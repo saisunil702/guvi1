@@ -1,7 +1,20 @@
-string,num=map(int,input().split())
-lis=list(str(string))
-temp=num
-while temp>0:
-    temp=temp-1
-    del(lis[temp])
-print("".join(lis))
+n=int(input())
+k=int(input())
+n=str(n)
+li=[]
+for i in n:
+	li.append(int(i))
+
+while k>0:
+	temp=min(li)
+	ind=li.index(temp)
+	if k>=len(li[:ind]) and len(li[:ind])>0:
+		li.remove(max(li[:ind]))
+		k-=1
+	else:
+		li.remove(max(li[ind+1:]))
+		k-=1
+result=''
+for i in li:
+	result+=str(i)
+print(result)
