@@ -1,4 +1,4 @@
-num=int(input())
-for i in range(1,5+1):
-	dig=i*num
+number=int(input())
+for i in range(1,6):
+	dig=i*number
 	print(dig,end=" ")
